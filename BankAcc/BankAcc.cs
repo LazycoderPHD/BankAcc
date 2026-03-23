@@ -11,5 +11,10 @@ namespace BankAcc
         public string Owner { get; set; }
         public Guid AccNum { get; set; }
         public decimal Balance { get; set; }
+
+        public BankAcc()
+        {
+
+        }
     }
 }
