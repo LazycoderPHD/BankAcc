@@ -110,6 +110,7 @@
             CreateAccBtn.TabIndex = 7;
             CreateAccBtn.Text = "Create Acc";
             CreateAccBtn.UseVisualStyleBackColor = true;
+            CreateAccBtn.Click += CreateAccBtn_Click;
             // 
             // Form1
             // 

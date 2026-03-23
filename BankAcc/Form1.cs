@@ -10,7 +10,7 @@ namespace BankAcc
             BankAcc bankacc2 = new BankAcc("Elon");
             BankAcc bankacc3 = new BankAcc("Levi");
             BankAcc bankacc4 = new BankAcc("Lmao");
-            
+
 
             List<BankAcc> bankaccs = new List<BankAcc>();
             bankaccs.Add(bankacc1);
@@ -30,6 +30,11 @@ namespace BankAcc
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CreateAccBtn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Im learning how to create a bankacc");
         }
     }
 }
