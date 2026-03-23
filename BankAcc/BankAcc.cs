@@ -12,9 +12,11 @@ namespace BankAcc
         public Guid AccNum { get; set; }
         public decimal Balance { get; set; }
 
-        public BankAcc()
+        public BankAcc(string Owner)
         {
-
+            this.Owner = Owner;
+            this.AccNum = Guid.NewGuid();
+            this.Balance = 0;
         }
     }
 }
