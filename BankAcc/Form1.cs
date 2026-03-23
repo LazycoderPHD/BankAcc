@@ -7,18 +7,17 @@ namespace BankAcc
             InitializeComponent();
 
             BankAcc bankacc1 = new BankAcc("Phat");
-            
-
             BankAcc bankacc2 = new BankAcc("Elon");
-            
-
             BankAcc bankacc3 = new BankAcc("Levi");
+            BankAcc bankacc4 = new BankAcc("Lmao");
             
 
             List<BankAcc> bankaccs = new List<BankAcc>();
             bankaccs.Add(bankacc1);
             bankaccs.Add(bankacc2);
             bankaccs.Add(bankacc3);
+            bankaccs.Add(bankacc4);
+
 
             BankAccsGrid.DataSource = bankaccs;
         }
