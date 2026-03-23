@@ -33,6 +33,9 @@
             OwnerTxt = new TextBox();
             AmountNum = new NumericUpDown();
             BankAccsGrid = new DataGridView();
+            DepositBtn = new Button();
+            WithdrawBtn = new Button();
+            CreateAccBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)AmountNum).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BankAccsGrid).BeginInit();
             SuspendLayout();
@@ -50,12 +53,13 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(14, 153);
+            label2.Location = new Point(14, 215);
             label2.Margin = new Padding(5, 0, 5, 0);
             label2.Name = "label2";
             label2.Size = new Size(83, 25);
             label2.TabIndex = 1;
             label2.Text = "Amount:";
+            label2.Click += label2_Click;
             // 
             // OwnerTxt
             // 
@@ -66,33 +70,64 @@
             // 
             // AmountNum
             // 
-            AmountNum.Location = new Point(105, 151);
+            AmountNum.Location = new Point(105, 213);
             AmountNum.Name = "AmountNum";
-            AmountNum.Size = new Size(145, 33);
+            AmountNum.Size = new Size(175, 33);
             AmountNum.TabIndex = 3;
             // 
             // BankAccsGrid
             // 
             BankAccsGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            BankAccsGrid.Location = new Point(298, 18);
+            BankAccsGrid.Location = new Point(286, 15);
             BankAccsGrid.Name = "BankAccsGrid";
-            BankAccsGrid.Size = new Size(327, 138);
+            BankAccsGrid.Size = new Size(438, 184);
             BankAccsGrid.TabIndex = 4;
+            // 
+            // DepositBtn
+            // 
+            DepositBtn.Location = new Point(286, 205);
+            DepositBtn.Name = "DepositBtn";
+            DepositBtn.Size = new Size(216, 44);
+            DepositBtn.TabIndex = 5;
+            DepositBtn.Text = "Deposit";
+            DepositBtn.UseVisualStyleBackColor = true;
+            // 
+            // WithdrawBtn
+            // 
+            WithdrawBtn.Location = new Point(508, 205);
+            WithdrawBtn.Name = "WithdrawBtn";
+            WithdrawBtn.Size = new Size(216, 44);
+            WithdrawBtn.TabIndex = 6;
+            WithdrawBtn.Text = "Withdraw";
+            WithdrawBtn.UseVisualStyleBackColor = true;
+            // 
+            // CreateAccBtn
+            // 
+            CreateAccBtn.Location = new Point(94, 64);
+            CreateAccBtn.Name = "CreateAccBtn";
+            CreateAccBtn.Size = new Size(186, 44);
+            CreateAccBtn.TabIndex = 7;
+            CreateAccBtn.Text = "Create Acc";
+            CreateAccBtn.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(656, 202);
+            ClientSize = new Size(733, 272);
+            Controls.Add(CreateAccBtn);
+            Controls.Add(WithdrawBtn);
+            Controls.Add(DepositBtn);
             Controls.Add(BankAccsGrid);
             Controls.Add(AmountNum);
             Controls.Add(OwnerTxt);
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)AmountNum).EndInit();
             ((System.ComponentModel.ISupportInitialize)BankAccsGrid).EndInit();
             ResumeLayout(false);
@@ -107,5 +142,8 @@
         private NumericUpDown numericUpDown1;
         private NumericUpDown AmountNum;
         private DataGridView BankAccsGrid;
+        private Button DepositBtn;
+        private Button WithdrawBtn;
+        private Button CreateAccBtn;
     }
 }
