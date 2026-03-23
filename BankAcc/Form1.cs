@@ -21,9 +21,15 @@ namespace BankAcc
 
         private void CreateAccBtn_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(OwnerTxt.Text))
+            {
+                return;
+            }
+
             BankAcc bankacc = new BankAcc(OwnerTxt.Text);
             BankAccs.Add(bankacc);
 
+            RefreshGrid();
         }
 
         private void RefreshGrid()
