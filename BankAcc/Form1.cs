@@ -2,7 +2,7 @@ namespace BankAcc
 {
     public partial class Form1 : Form
     {
-        List<BankAcc> bankaccs = new List<BankAcc>();
+        List<BankAcc> BankAccs = new List<BankAcc>();
 
         public Form1()
         {
@@ -12,7 +12,7 @@ namespace BankAcc
             
 
 
-            BankAccsGrid.DataSource = bankaccs;
+            BankAccsGrid.DataSource = BankAccs;
         }
 
         private void Form1_Load(object sender, EventArgs e)
