@@ -7,19 +7,13 @@ namespace BankAcc
             InitializeComponent();
 
             BankAcc bankacc1 = new BankAcc("Phat");
-            //bankacc1.Owner = "Phat";
-            //bankacc1.AccNum = Guid.NewGuid();
-            //bankacc1.Balance = 100;
+            
 
             BankAcc bankacc2 = new BankAcc("Elon");
-            //bankacc2.Owner = "Elon";
-            //bankacc2.AccNum = Guid.NewGuid();
-            //bankacc2.Balance = 9000;
+            
 
             BankAcc bankacc3 = new BankAcc("Levi");
-            //bankacc3.Owner = "Levi";
-            //bankacc3.AccNum = Guid.NewGuid();
-            //bankacc3.Balance = 1;
+            
 
             List<BankAcc> bankaccs = new List<BankAcc>();
             bankaccs.Add(bankacc1);
