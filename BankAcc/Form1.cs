@@ -23,6 +23,8 @@ namespace BankAcc
         {
             if (string.IsNullOrEmpty(OwnerTxt.Text))
             {
+                //MessageBox.Show = "Name cannot be empty!";
+                MessageBox.Show("Name cannot be empty!");
                 return;
             }
 
@@ -30,6 +32,7 @@ namespace BankAcc
             BankAccs.Add(bankacc);
 
             RefreshGrid();
+            OwnerTxt.Text = "";
         }
 
         private void RefreshGrid()
