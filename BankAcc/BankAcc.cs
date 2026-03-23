@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace BankAcc
 {
-    internal class BankAcc
+    public class BankAcc
     {
+        public string Owner { get; set; }
+        public Guid AccNum { get; set; }
+        public decimal Balance { get; set; }
     }
 }
