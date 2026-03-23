@@ -2,12 +2,13 @@ namespace BankAcc
 {
     public partial class Form1 : Form
     {
+        List<BankAcc> bankaccs = new List<BankAcc>();
+
         public Form1()
         {
             InitializeComponent();
 
 
-            List<BankAcc> bankaccs = new List<BankAcc>();
             
 
 
