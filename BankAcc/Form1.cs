@@ -7,12 +7,6 @@ namespace BankAcc
         public Form1()
         {
             InitializeComponent();
-
-
-            
-
-
-            BankAccsGrid.DataSource = BankAccs;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -27,7 +21,11 @@ namespace BankAcc
 
         private void CreateAccBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Im learning how to create a bankacc");
+            BankAcc bankacc = new BankAcc(OwnerTxt.Text);
+            BankAccs.Add(bankacc);
+
+            BankAccsGrid.DataSource = null;
+            BankAccsGrid.DataSource = bankacc;
         }
     }
 }
