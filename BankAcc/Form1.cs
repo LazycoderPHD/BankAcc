@@ -24,8 +24,12 @@ namespace BankAcc
             BankAcc bankacc = new BankAcc(OwnerTxt.Text);
             BankAccs.Add(bankacc);
 
+        }
+
+        private void RefreshGrid()
+        {
             BankAccsGrid.DataSource = null;
-            BankAccsGrid.DataSource = bankacc;
+            BankAccsGrid.DataSource = BankAccs;
         }
     }
 }
