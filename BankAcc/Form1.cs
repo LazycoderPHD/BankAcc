@@ -31,6 +31,7 @@ namespace BankAcc
             BankAcc bankacc = new BankAcc(OwnerTxt.Text);
             BankAccs.Add(bankacc);
 
+            //everytime you make an account, clear the name
             RefreshGrid();
             OwnerTxt.Text = "";
         }
