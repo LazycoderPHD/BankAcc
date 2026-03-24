@@ -2,6 +2,7 @@ namespace BankAcc
 {
     public partial class Form1 : Form
     {
+        //global property of the Form1
         List<BankAcc> BankAccs = new List<BankAcc>();
 
         public Form1()
